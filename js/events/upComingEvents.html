@@ -1,0 +1,36 @@
+<ul class='eventsList'>
+<% var eventIsPresent = false %>
+<% _.each(events.data, _.bind(function (data) { %>		
+	
+	<% if (new Date(data.start_time) > new Date()) { %> 
+		
+		<% eventIsPresent = false %>
+		<li>
+			<div class="col-sm-12">
+				<h4 class='eventName'><a href='exhibitions.php?eventId=<%- data.id %>' id='event_<%- data.id %>'><%- data.name %></a></h4>
+				<footer>Date: <%- new Date(data.start_time).toDateString() %> </b> to  <b><%- new Date(data.end_time).toDateString() %></footer>
+				<footer>Location: <%- data.location %></footer>
+			</div>
+			<div class='cover-photo img-responsive'>
+				<img src=<%- data.cover ? data.cover.source  : 'def' %>>
+			</div>
+			<div class='col-sm-12 divider-bottom'>
+				<footer class='text-right'><a href='exhibitions.php?eventId=<%- data.id %>'>more...</a></footer>
+			</div>
+				
+		</li>
+	<% } %>
+	
+	<% if (!eventIsPresent) {  %>
+		<% eventIsPresent = true %>
+		<li>
+			<div class="col-sm-12">
+				<small>coming soon..</small>
+			</div>			
+		</li>	
+	<% } %>
+		
+	
+
+<% }, this)) %>
+</ul>

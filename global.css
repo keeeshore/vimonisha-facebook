@@ -1,0 +1,178 @@
+#loaderBar {
+	background: url("images/ajax-loader.gif") top center no-repeat; 
+	height:20px; 
+	position: fixed;
+	z-index: 9999;
+	width: 213px;
+	left: 40%;
+	top: 0px;
+}
+
+.form-inline .row {
+	margin: 4px 0px;
+}
+
+div.bordered {
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+h1 {
+	font-size: 22px;
+	color: #cc0000;
+}
+h3.in-bordered {
+	padding: 0px 5px 5px 10px;
+	margin: 10px 0px;
+}
+
+h3 {
+	border-bottom: 1px solid #F1EBEB;
+	padding: 2px 0px 5px 0px;
+	font-size: 19px;
+}
+
+h2 {
+	color: #cc0000;
+	border-bottom: 1px solid #F1EBEB;
+	font-size: 21px;
+	padding: 5px 0px 10px 0px;
+}
+
+ul.eventsList {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.eventsList li {
+	display: inline-block;
+	margin: 4px 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #FFF;
+}
+
+.rightRegion {
+}
+
+ul.eventsList li .cover-photo img {
+	width: 100%;
+}
+
+h3 {
+	
+}
+
+h4 {
+	font-size: 17px;
+}
+
+ul.eventsList li .eventName {	
+	margin: 2px 0px;
+	padding: 0px;
+}
+ul.eventsList li .eventName a {
+	color: #cc0000;
+	font-size: 18px;
+}
+
+ul.timelinePhotoList {	
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.timelinePhotoList li {
+	display: block;
+	overflow: auto;
+	clear: both;	
+	padding: 0px 10px 10px 10px;
+	vertical-align: top;
+}
+
+ul.timelinePhotoList li .cover-photo {
+	float: left;
+	display: inline-block;
+	padding: 0px 10px 0px 0px;
+}
+
+ul.albumsList {
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+ul.albumsList li {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	clear: both;
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
+
+ul.albumsList li a{
+	padding: 0px 10px;
+	display: inline-block;
+}
+
+ul.albumsList li a:hover {
+	color: #cc0000;
+}
+
+
+
+ul.galleryList {
+	overflow: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+ul.galleryList li {
+	/* width: 107px; */
+	height: 86px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	float: left;
+	clear: none;	
+}
+
+ul.galleryList li:hover {
+	cursor: pointer;
+	border: 1px solid #cc0000;
+	background: #FFF;	
+}
+
+
+
+.albumInnerGallery {
+	position: relative;
+	top: -32px;
+}
+
+
+ul.eventDetailsList {
+	overflow: auto;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.eventDetailsList li {
+	display: block;
+	clear: both;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0px;
+	margin: 0px;
+}
+
+ul.eventDetailsList .eventDetailsImg {
+	cursor: pointer;
+}
+
+.divider-top {
+	border-top: 1px solid #CCC;
+}
+
+.divider-bottom {
+	border-bottom: 1px solid #CCC;
+}

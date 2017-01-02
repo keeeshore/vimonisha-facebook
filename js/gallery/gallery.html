@@ -1,0 +1,10 @@
+<div class='col-sm-12 text-right'>
+	<span class="glyphicon glyphicon-remove emptyGalleryBtn" id='removeAlbum_<%- id %>' style='margin-top: 10px;'>
+</div>
+<div class='col-sm-12'>
+	<ul class='galleryList list-inline'>
+	<% _.each(photos.data, _.bind(function (data) { %>	
+		<li><img src='<%- data.picture %>' id='<%- data.images[1].source %>' data-toggle="modal" data-target=".galleryModal"></li>
+	<% }, this)) %>
+	</ul>
+</div>

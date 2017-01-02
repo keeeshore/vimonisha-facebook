@@ -1,0 +1,11 @@
+<ul class='albumsList list-inline'>
+<% _.each(albums.data, _.bind(function (data) { %>
+	
+	<li style='vertical-align: top' id='<%- data.id %>'>
+		<h4 class='text-center'><a href='#<%- data.id %>' class='albumName'><%- data.name %></a></h4>
+		<img src='<%- data.picture.data.url %>'>
+	</li>
+	
+
+<% }, this)) %>
+</ul>

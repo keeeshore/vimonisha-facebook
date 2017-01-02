@@ -1,0 +1,22 @@
+<ul class='eventsList'>
+<% _.each(events.data, _.bind(function (data, count) { %>
+	
+	<% if (new Date(data.start_time) < new Date()) { %> 	
+		<li class=<%- (count > 1) ? 'hidden' : '' %>>
+			<div class="col-sm-12">
+				<h4 class='eventName'><a href='exhibitions.php?eventId=<%- data.id %>' id='event_<%- data.id %>'><%- data.name %></a></h4>
+				<footer>Date: <%- new Date(data.start_time).toDateString() %> </b> to  <b><%- new Date(data.end_time).toDateString() %></footer>
+				<footer>Location: <%- data.location %></footer>
+			</div>
+			<div class='col-sm-12 cover-photo img-responsive'>
+				<img src=<%- data.cover ? data.cover.source  : '' %>>				
+			</div>
+			<div class='col-sm-12 divider-bottom'>
+				<footer class='text-right'><a href='exhibitions.php?eventId=<%- data.id %>'>more...</a></footer>
+			</div>			
+		</li>
+	<% } %>	
+	
+
+<% }, this)) %>
+</ul>
